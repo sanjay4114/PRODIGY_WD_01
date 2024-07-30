@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    color: rgb(255, 68, 0);
+    font-size: 35px;
+    margin-right: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: block;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #00f93a;
+    transition: background-color 0.3s ease;
+}
+
+section {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.article {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(25vh);
+}
+
+.article h1 {
+    font-size: 36px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.article p {
+    font-size: 18px;
+    color: #7e7e7e;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.article .btn {
+    color: #fff;
+    padding: 12px 25px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #f15048;
+}
+
+.article .btn:hover {
+    background-color: #4399fa;
+    transition: background-color 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 28px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .article {
+        width: 90%;
+    }
+
+    .article h1 {
+        font-size: 28px;
+    }
+
+    .article p {
+        font-size: 16px;
+    }
+}
